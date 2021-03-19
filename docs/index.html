@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CrazyPanda Test Problem</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        #editor {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #sliders {
+            flex-grow: 1;
+        }
+
+        #sliders>div {
+            margin: 20px;
+        }
+
+        #preview {
+            padding: 1em;
+
+            width: 300px;
+        }
+
+        #slider-red .ui-slider-range {
+            background: #ef2929;
+        }
+
+        #slider-red .ui-slider-handle {
+            border-color: #ef2929;
+        }
+
+        #slider-green .ui-slider-range {
+            background: #8ae234;
+        }
+
+        #slider-green .ui-slider-handle {
+            border-color: #8ae234;
+        }
+
+        #slider-blue .ui-slider-range {
+            background: #729fcf;
+        }
+
+        #slider-blue .ui-slider-handle {
+            border-color: #729fcf;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Select:</legend>
+            <div id="colortype">
+                <button id="colortype-color" type="button">color</button>
+                <button id="colortype-background-color" type="button">backgroundColor</button>
+            </div>
+        </fieldset>
+
+        <div id="editor">
+            <div id="sliders">
+                <div id="slider-red"></div>
+                <div id="slider-green"></div>
+                <div id="slider-blue"></div>
+            </div>
+
+            <div id="preview" class="ui-widget-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit eius obcaecati voluptate iusto porro
+                eveniet? Similique ab odit corporis.
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
